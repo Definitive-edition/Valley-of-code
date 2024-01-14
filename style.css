@@ -1,0 +1,113 @@
+/* Styles for country class */
+.country {
+  background-color: rgb(215, 11, 11);
+  color: rgb(221, 221, 18);
+  padding: 8px;
+}
+/* Styles for India with additional specificity */
+.country#India {
+background-color: black;
+color: aqua;
+padding: 8px;
+}
+/* Styles for blue class */
+.blue {
+  color: blue;
+  background-color: whitesmoke;
+padding: 3px;
+}
+
+/* Styles for dead and dog-name classes */
+.dead, .dog-name {
+color: green;
+background-color: antiquewhite;
+}
+/* Styles for specific paragraph with dog-name class */
+p.dog-name {
+color: red;
+}
+
+/* specificity demonstation, green isn't present because of the id and element selectors*/
+#Game-list li {color: rgb(0, 247, 247);}
+li {color: green;}
+#Game-list .favorite {color: blue ;}
+
+
+/* Styles for h1 and .child with font size and family */
+h1, .child{
+font-size: 30px;
+font-size: rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Styles for parent1 with font size */
+.parent1 {
+font-size: 30px;
+}
+
+/* Styles for child1 with font size */
+.child1 {
+font-size: rem;
+}
+
+
+/* Styles for links starting with https */
+a[href^="https"] {
+color: rgb(207, 195, 25);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* Styles for endgame class with display none */
+p.endgame {
+display: none;
+background-color: aqua;
+padding-top: 30px;
+}
+
+/*plus needed when using multiple selectors with a pseudo class*/
+h1:hover + .endgame {
+display: block;
+}
+/* color changes upon hovering over button */
+a:hover .videos {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: blue;
+background-color: pink;
+}
+
+/* when cursor is pressed, color changes to aqua */
+a:active .videos {
+background-color: aqua;
+}
+/* button color change after visiting link */
+a:visited .videos {
+background-color: chartreuse
+}
+
+/* Applying styles to .gods when it's the first child of its parent */
+
+
+
+.gods li:first-child{
+background-color: rgb(0, 255, 64);
+font-size: 2rem;
+}
+
+.gods li:nth-child(even){
+background-color: aqua;
+font-size: 2rem;
+}
+
+
+h2.favorite-fe {
+color: rgb(150, 20, 202);
+}
+
+
+.checkbox #fe12 {
+color: aqua;
+}
